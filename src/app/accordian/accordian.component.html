@@ -1,1 +1,23 @@
-<p>accordian works!</p>
+<div>
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Look for a flight
+                </mat-panel-title>
+                <mat-panel-description>6395
+                    
+                  </mat-panel-description>
+                  <form [formGroup]="userInput">
+                    <div>
+                        <label>Trip</label> 
+                        <mat-radio-group [formControl]="floatLabelControl">
+                            <mat-radio-button value="oneway">One Way</mat-radio-button>
+                            <mat-radio-button value="return">Return</mat-radio-button>
+                        </mat-radio-group>                           
+                    </div>
+                </form>
+            </mat-expansion-panel-header>            
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

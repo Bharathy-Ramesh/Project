@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccordianComponent } from './accordian/accordian.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatRadioModule } from '@angular/material/radio';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,8 +21,12 @@ import {MatExpansionModule} from '@angular/material/expansion';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
+    MatFormFieldModule,
     MatIconModule,
-    MatExpansionModule 
+    MatExpansionModule,
+    MatRadioModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

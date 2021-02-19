@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-accordian',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./accordian.component.scss']
 })
 export class AccordianComponent implements OnInit {
-
+  userInput:any;
+  floatLabelControl = new FormControl('oneway');
   constructor() { }
 
   ngOnInit(): void {
