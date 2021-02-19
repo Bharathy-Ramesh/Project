@@ -5,10 +5,12 @@ import {MatIconModule} from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AccordianComponent } from './accordian/accordian.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AccordianComponent
   ],
   imports: [
     BrowserModule,
