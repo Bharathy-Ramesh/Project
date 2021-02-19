@@ -13,13 +13,27 @@
                         <table>
                             <tr>
                                 <td>
-                                    <label class="form-check-label">Trip</label>
+                                    <label>Trip</label>
                                 </td>
                                 <td>
                                     <mat-radio-group [formControl]="floatLabelControl">
                                         <mat-radio-button value="auto">Auto</mat-radio-button>
                                         <mat-radio-button value="always">Always</mat-radio-button>
                                       </mat-radio-group>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>From</label>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="custom-select">
+                                            <option>
+                                                select
+                                            </option>
+                                        </select>
+                                    </div>
                                 </td>
                             </tr>
                         </table>                          
