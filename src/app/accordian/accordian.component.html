@@ -5,10 +5,36 @@
                 <mat-panel-title>
                     Look for a flight
                 </mat-panel-title>
-                <mat-panel-description>6395
-                    
+                <mat-panel-description>  
                   </mat-panel-description>
+                </mat-expansion-panel-header>
                   <form [formGroup]="userInput">
+                    <div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label class="form-check-label">Trip</label>
+                                </td>
+                                <td>
+                                    <mat-radio-group [formControl]="floatLabelControl">
+                                        <mat-radio-button value="auto">Auto</mat-radio-button>
+                                        <mat-radio-button value="always">Always</mat-radio-button>
+                                      </mat-radio-group>
+                                </td>
+                            </tr>
+                        </table>                          
+                    </div>
+                </form>            
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Hotels
+                </mat-panel-title>
+                <mat-panel-description>  
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                  <!-- <form [formGroup]="userInput">
                     <div>
                         <label>Trip</label> 
                         <mat-radio-group [formControl]="floatLabelControl">
@@ -16,8 +42,43 @@
                             <mat-radio-button value="return">Return</mat-radio-button>
                         </mat-radio-group>                           
                     </div>
-                </form>
-            </mat-expansion-panel-header>            
+                </form>             -->
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Cars
+                </mat-panel-title>
+                <mat-panel-description>  
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                  <!-- <form [formGroup]="userInput">
+                    <div>
+                        <label>Trip</label> 
+                        <mat-radio-group [formControl]="floatLabelControl">
+                            <mat-radio-button value="oneway">One Way</mat-radio-button>
+                            <mat-radio-button value="return">Return</mat-radio-button>
+                        </mat-radio-group>                           
+                    </div>
+                </form>             -->
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Registers
+                </mat-panel-title>
+                <mat-panel-description>  
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                  <!-- <form [formGroup]="userInput">
+                    <div>
+                        <label>Trip</label> 
+                        <mat-radio-group [formControl]="floatLabelControl">
+                            <mat-radio-button value="oneway">One Way</mat-radio-button>
+                            <mat-radio-button value="return">Return</mat-radio-button>
+                        </mat-radio-group>                           
+                    </div>
+                </form>             -->
         </mat-expansion-panel>
     </mat-accordion>
 </div>

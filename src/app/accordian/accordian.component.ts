@@ -8,6 +8,7 @@ import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 })
 export class AccordianComponent implements OnInit {
   userInput:any;
+  panelOpenState:any=false;
   floatLabelControl = new FormControl('oneway');
   constructor() { }
 
