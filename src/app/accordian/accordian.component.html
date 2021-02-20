@@ -147,18 +147,54 @@
                 <mat-panel-title>
                     Cars
                 </mat-panel-title>
-                <mat-panel-description>  
-                  </mat-panel-description>
                 </mat-expansion-panel-header>
-                  <!-- <form [formGroup]="userInput">
+                <form #hotels ="ngForm">
                     <div>
-                        <label>Trip</label> 
-                        <mat-radio-group [formControl]="floatLabelControl">
-                            <mat-radio-button value="oneway">One Way</mat-radio-button>
-                            <mat-radio-button value="return">Return</mat-radio-button>
-                        </mat-radio-group>                           
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Where</label>
+                                </td>
+                                <td>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput name="place" [(ngModel)]="place">
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Pick Up</label>
+                                </td>
+                                <td>
+                                    <mat-form-field appearance="fill">
+                                        <mat-label>Choose a date</mat-label>
+                                        <input matInput [matDatepicker]="pick" [min]="minDate" name="pickup" [(ngModel)]="pickup" disabled>
+                                        <mat-datepicker-toggle  matSuffix [for]="pick"></mat-datepicker-toggle>
+                                        <mat-datepicker #pick disabled="false"></mat-datepicker>
+                                      </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Return Car</label>
+                                </td>
+                                <td>
+                                    <mat-form-field appearance="fill">
+                                        <mat-label>Choose a date</mat-label>
+                                        <input matInput [matDatepicker]="ret" [min]="minDate" name="return" [(ngModel)]="return" disabled>
+                                        <mat-datepicker-toggle  matSuffix [for]="ret"></mat-datepicker-toggle>
+                                        <mat-datepicker #ret disabled="false"></mat-datepicker>
+                                      </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan = "2">
+                                <button mat-button class="button">Search</button>
+                                </td>
+                            </tr>
+                        </table>                          
                     </div>
-                </form>             -->
+                </form>
         </mat-expansion-panel>
         <mat-expansion-panel>
             <mat-expansion-panel-header>

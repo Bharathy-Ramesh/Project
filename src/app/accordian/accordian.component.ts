@@ -18,6 +18,8 @@ export class AccordianComponent implements OnInit {
   place:any;
   checkin:any;
   checkout:any;
+  pickup:any;
+  return:any;
   minDate:any =new Date();
   
   constructor() { }
