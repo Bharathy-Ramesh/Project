@@ -8,7 +8,7 @@
                 <mat-panel-description>  
                   </mat-panel-description>
                 </mat-expansion-panel-header>
-                  <form [formGroup]="userInput">
+                  <form #userInput ="ngForm">
                     <div>
                         <table>
                             <tr>
@@ -16,7 +16,7 @@
                                     <label>Trip</label>
                                 </td>
                                 <td>
-                                    <mat-radio-group [formControl]="floatLabelControl">
+                                    <mat-radio-group name="travelType" [(ngModel)]="travelType">
                                         <mat-radio-button value="auto">Auto</mat-radio-button>
                                         <mat-radio-button value="always">Always</mat-radio-button>
                                       </mat-radio-group>
@@ -28,7 +28,7 @@
                                 </td>
                                 <td>
                                     <mat-form-field appearance="fill">
-                                    <mat-select required>
+                                    <mat-select name="departure" [(ngModel)]="departure" required>
                                         <mat-option>-- None --</mat-option>
                                         <mat-option value="option">Option</mat-option>
                                       </mat-select>
@@ -41,7 +41,7 @@
                                 </td>
                                 <td>
                                     <mat-form-field appearance="fill">
-                                    <mat-select required>
+                                    <mat-select name="destination" [(ngModel)]="destination" required>
                                         <mat-option>-- None --</mat-option>
                                         <mat-option value="option">Option</mat-option>
                                       </mat-select>
@@ -55,9 +55,22 @@
                                 <td>
                                     <mat-form-field appearance="fill">
                                         <mat-label>Choose a date</mat-label>
-                                        <input matInput [matDatepicker]="picker">
+                                        <input matInput [matDatepicker]="picker" name="from" [(ngModel)]="from">
                                         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                                         <mat-datepicker #picker></mat-datepicker>
+                                      </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Adults</label>
+                                </td>
+                                <td>
+                                    <mat-form-field appearance="fill">
+                                        <!-- <mat-label>Choose a date</mat-label> -->
+                                        <input matInput [matDatepicker]="picker" name="from" [(ngModel)]="from">
+                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                        <!-- <mat-datepicker #picker></mat-datepicker> -->
                                       </mat-form-field>
                                 </td>
                             </tr>
