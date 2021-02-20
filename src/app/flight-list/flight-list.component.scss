@@ -2,3 +2,24 @@
     display:flex;
     justify-content: space-between;
 }
+.label{
+    margin-top: 5px;
+    display: block;
+}
+table{
+    width:100%;
+}
+td,th{
+    margin:10px;
+    padding:10px;  
+}
+th{
+    background-color: rgb(240, 238, 238);
+}
+button{
+    font-size: 18px;
+    background-color: white;
+    border:none;
+    height:40px;
+}
+
