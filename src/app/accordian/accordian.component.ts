@@ -12,6 +12,8 @@ export class AccordianComponent implements OnInit {
   departure:any;
   destination:any;
   from:any;
+  adult:any;
+  child:any;
   
   constructor() { }
 
