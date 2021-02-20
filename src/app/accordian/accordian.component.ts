@@ -7,13 +7,17 @@ import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./accordian.component.scss']
 })
 export class AccordianComponent implements OnInit {
-  userInput:any;
+  flight:any;
+  hotels:any;
   travelType:any;
   departure:any;
   destination:any;
   from:any;
   adult:any;
   child:any;
+  place:any;
+  checkin:any;
+  checkout:any;
   minDate:any =new Date();
   
   constructor() { }

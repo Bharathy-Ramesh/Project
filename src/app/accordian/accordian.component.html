@@ -5,10 +5,8 @@
                 <mat-panel-title>
                     Look for a flight
                 </mat-panel-title>
-                <mat-panel-description>  
-                  </mat-panel-description>
                 </mat-expansion-panel-header>
-                  <form #userInput ="ngForm">
+                  <form #flight ="ngForm">
                     <div>
                         <table>
                             <tr>
@@ -81,6 +79,11 @@
                                       </mat-form-field>
                                 </td>
                             </tr>
+                            <tr>
+                                <td colspan = "2">
+                                <button mat-button class="button">Search Now</button>
+                                </td>
+                            </tr>
                         </table>                          
                     </div>
                 </form>            
@@ -90,18 +93,54 @@
                 <mat-panel-title>
                     Hotels
                 </mat-panel-title>
-                <mat-panel-description>  
-                  </mat-panel-description>
                 </mat-expansion-panel-header>
-                  <!-- <form [formGroup]="userInput">
+                <form #hotels ="ngForm">
                     <div>
-                        <label>Trip</label> 
-                        <mat-radio-group [formControl]="floatLabelControl">
-                            <mat-radio-button value="oneway">One Way</mat-radio-button>
-                            <mat-radio-button value="return">Return</mat-radio-button>
-                        </mat-radio-group>                           
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Where</label>
+                                </td>
+                                <td>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput name="place" [(ngModel)]="place">
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Check In</label>
+                                </td>
+                                <td>
+                                    <mat-form-field appearance="fill">
+                                        <mat-label>Choose a date</mat-label>
+                                        <input matInput [matDatepicker]="c1" [min]="minDate" name="checkin" [(ngModel)]="checkin" disabled>
+                                        <mat-datepicker-toggle  matSuffix [for]="c1"></mat-datepicker-toggle>
+                                        <mat-datepicker #c1 disabled="false"></mat-datepicker>
+                                      </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Check Out</label>
+                                </td>
+                                <td>
+                                    <mat-form-field appearance="fill">
+                                        <mat-label>Choose a date</mat-label>
+                                        <input matInput [matDatepicker]="c2" [min]="minDate" name="checkout" [(ngModel)]="checkout" disabled>
+                                        <mat-datepicker-toggle  matSuffix [for]="c2"></mat-datepicker-toggle>
+                                        <mat-datepicker #c2 disabled="false"></mat-datepicker>
+                                      </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan = "2">
+                                <button mat-button class="button">Search</button>
+                                </td>
+                            </tr>
+                        </table>                          
                     </div>
-                </form>             -->
+                </form>
         </mat-expansion-panel>
         <mat-expansion-panel>
             <mat-expansion-panel-header>
