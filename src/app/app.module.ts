@@ -15,6 +15,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
 import { FlightListComponent } from './flight-list/flight-list.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 
@@ -38,7 +40,9 @@ import { FlightListComponent } from './flight-list/flight-list.component';
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
