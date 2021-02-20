@@ -14,6 +14,7 @@ export class AccordianComponent implements OnInit {
   from:any;
   adult:any;
   child:any;
+  minDate:any =new Date();
   
   constructor() { }
 
