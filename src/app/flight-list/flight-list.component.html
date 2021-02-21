@@ -12,67 +12,67 @@
     <div *ngIf = "offerTab == 1">
         <table>
            <tr>
-               <th>Direction</th>
-               <th>Date</th>
-               <th>Time</th>
-               <th>Price</th>
-               <th>You Save</th>
-               <th>Tickets</th>
-               <th>Status</th>
+               <th><div class="flexdirection"><span>Direction</span><mat-icon>menu</mat-icon></div></th>
+               <th><div class="flexdirection"><span>Date</span><mat-icon>menu</mat-icon></div></th>
+               <th><div class="flexdirection"><span>Time</span><mat-icon>menu</mat-icon></div></th>
+               <th><div class="flexdirection"><span>Price</span><mat-icon>menu</mat-icon></div></th>
+               <th><div class="flexdirection"><span>You Save</span><mat-icon>menu</mat-icon></div></th>
+               <th><div class="flexdirection"><span>Tickets</span><mat-icon>menu</mat-icon></div></th>
+               <th><div class="flexdirection"><span>Status</span><mat-icon>menu</mat-icon></div></th>
            </tr> 
-           <tr>
-               <td>Minsk International 2 BY - Berlin Schoenefeld DE</td>
-               <td>13 January 2020</td>
+           <tr *ngFor="let det of list">
+               <td>{{det.direction}}</td>
+               <td>{{det.date}}</td>
                <td><mat-icon>keyboard_arrow_right</mat-icon></td>
-               <td>$256.00</td>
-               <td>$32.00</td>
-               <td>55</td>
-               <td>Open</td>
+               <td>{{det.price}}</td>
+               <td>{{det.save}}</td>
+               <td>{{det.tickets}}</td>
+               <td>{{det.status}}</td>
            </tr>
         </table>
     </div>
     <div *ngIf = "regTab == 1">
         <table>
            <tr>
-               <th>Direction1</th>
-               <th>Date1</th>
-               <th>Time</th>
-               <th>Price</th>
-               <th>You Save</th>
-               <th>Tickets</th>
-               <th>Status</th>
+                <th><div class="flexdirection"><span>Direction1</span><mat-icon>menu</mat-icon></div></th>
+                <th><div class="flexdirection"><span>Date</span><mat-icon>menu</mat-icon></div></th>
+                <th><div class="flexdirection"><span>Time</span><mat-icon>menu</mat-icon></div></th>
+                <th><div class="flexdirection"><span>Price</span><mat-icon>menu</mat-icon></div></th>
+                <th><div class="flexdirection"><span>You Save</span><mat-icon>menu</mat-icon></div></th>
+                <th><div class="flexdirection"><span>Tickets</span><mat-icon>menu</mat-icon></div></th>
+                <th><div class="flexdirection"><span>Status</span><mat-icon>menu</mat-icon></div></th>
            </tr> 
-           <tr>
-               <td>Minsk International 2 BY - Berlin Schoenefeld DE</td>
-               <td>13 January 2020</td>
-               <td><mat-icon>keyboard_arrow_right</mat-icon></td>
-               <td>$256.00</td>
-               <td>$32.00</td>
-               <td>55</td>
-               <td>Open</td>
-           </tr>
+           <tr *ngFor="let det of list">
+                <td>{{det.direction}}</td>
+                <td>{{det.date}}</td>
+                <td><mat-icon>keyboard_arrow_right</mat-icon></td>
+                <td>{{det.price}}</td>
+                <td>{{det.save}}</td>
+                <td>{{det.tickets}}</td>
+                <td>{{det.status}}</td>
+        </tr>
         </table>
     </div>
     <div *ngIf = "infoTab == 1">
         <table>
            <tr>
-               <th>Direction2</th>
-               <th>Date2</th>
-               <th>Time</th>
-               <th>Price</th>
-               <th>You Save</th>
-               <th>Tickets</th>
-               <th>Status</th>
+                <th><div class="flexdirection"><span>Direction2</span><mat-icon>menu</mat-icon></div></th>
+                <th><div class="flexdirection"><span>Date</span><mat-icon>menu</mat-icon></div></th>
+                <th><div class="flexdirection"><span>Time</span><mat-icon>menu</mat-icon></div></th>
+                <th><div class="flexdirection"><span>Price</span><mat-icon>menu</mat-icon></div></th>
+                <th><div class="flexdirection"><span>You Save</span><mat-icon>menu</mat-icon></div></th>
+                <th><div class="flexdirection"><span>Tickets</span><mat-icon>menu</mat-icon></div></th>
+                <th><div class="flexdirection"><span>Status</span><mat-icon>menu</mat-icon></div></th>
            </tr> 
-           <tr>
-               <td>Minsk International 2 BY - Berlin Schoenefeld DE</td>
-               <td>13 January 2020</td>
-               <td><mat-icon>keyboard_arrow_right</mat-icon></td>
-               <td>$256.00</td>
-               <td>$32.00</td>
-               <td>55</td>
-               <td>Open</td>
-           </tr>
+           <tr *ngFor="let det of list">
+                <td>{{det.direction}}</td>
+                <td>{{det.date}}</td>
+                <td><mat-icon>keyboard_arrow_right</mat-icon></td>
+                <td>{{det.price}}</td>
+                <td>{{det.save}}</td>
+                <td>{{det.tickets}}</td>
+                <td>{{det.status}}</td>
+        </tr>
         </table>
     </div>
 </mat-card>

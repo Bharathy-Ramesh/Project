@@ -9,9 +9,18 @@ export class FlightListComponent implements OnInit {
   offerTab:any=1;
   regTab:any=0;
   infoTab:any=0;
+  list:any;
   constructor() { }
   
   ngOnInit(): void {
+    this.list = [{
+      direction:"Minsk International 2 BY - Berlin Schoenefeld DE",
+      date:"13 January 2020",
+      price:"$256.00",
+      save:"$32.00",
+      tickets:55,
+      status:"Open"
+    }];
   }
   changetable(val:any){
     debugger;
