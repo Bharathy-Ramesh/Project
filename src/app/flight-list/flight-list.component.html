@@ -12,13 +12,27 @@
     <div *ngIf = "offerTab == 1">
         <table>
            <tr>
-               <th><div class="flexdirection"><span>Direction</span><mat-icon>menu</mat-icon></div></th>
-               <th><div class="flexdirection"><span>Date</span><mat-icon>menu</mat-icon></div></th>
-               <th><div class="flexdirection"><span>Time</span><mat-icon>menu</mat-icon></div></th>
-               <th><div class="flexdirection"><span>Price</span><mat-icon>menu</mat-icon></div></th>
-               <th><div class="flexdirection"><span>You Save</span><mat-icon>menu</mat-icon></div></th>
-               <th><div class="flexdirection"><span>Tickets</span><mat-icon>menu</mat-icon></div></th>
-               <th><div class="flexdirection"><span>Status</span><mat-icon>menu</mat-icon></div></th>
+               <th (mouseover)="changeText1=true" (mouseout)="changeText1=false">
+                   <div class="flexdirection"><span>Direction</span><mat-icon *ngIf="changeText1">menu</mat-icon></div>
+                </th>
+               <th (mouseover)="changeText2=true" (mouseout)="changeText2=false">
+                   <div class="flexdirection"><span>Date</span><mat-icon *ngIf="changeText2">menu</mat-icon></div>
+                </th>
+               <th (mouseover)="changeText3=true" (mouseout)="changeText3=false">
+                   <div class="flexdirection"><span>Time</span><mat-icon *ngIf="changeText3">menu</mat-icon></div>
+                </th>
+               <th (mouseover)="changeText4=true" (mouseout)="changeText4=false">
+                   <div class="flexdirection"><span>Price</span><mat-icon *ngIf="changeText4">menu</mat-icon></div>
+                </th>
+               <th (mouseover)="changeText5=true" (mouseout)="changeText5=false">
+                   <div class="flexdirection"><span>You Save</span><mat-icon *ngIf="changeText5">menu</mat-icon></div>
+                </th>
+               <th (mouseover)="changeText6=true" (mouseout)="changeText6=false">
+                   <div class="flexdirection"><span>Tickets</span><mat-icon *ngIf="changeText6">menu</mat-icon></div>
+                </th>
+               <th (mouseover)="changeText7=true" (mouseout)="changeText7=false">
+                   <div class="flexdirection"><span>Status</span><mat-icon *ngIf="changeText7">menu</mat-icon></div>
+                </th>
            </tr> 
            <tr *ngFor="let det of list">
                <td>{{det.direction}}</td>
@@ -34,13 +48,27 @@
     <div *ngIf = "regTab == 1">
         <table>
            <tr>
-                <th><div class="flexdirection"><span>Direction1</span><mat-icon>menu</mat-icon></div></th>
-                <th><div class="flexdirection"><span>Date</span><mat-icon>menu</mat-icon></div></th>
-                <th><div class="flexdirection"><span>Time</span><mat-icon>menu</mat-icon></div></th>
-                <th><div class="flexdirection"><span>Price</span><mat-icon>menu</mat-icon></div></th>
-                <th><div class="flexdirection"><span>You Save</span><mat-icon>menu</mat-icon></div></th>
-                <th><div class="flexdirection"><span>Tickets</span><mat-icon>menu</mat-icon></div></th>
-                <th><div class="flexdirection"><span>Status</span><mat-icon>menu</mat-icon></div></th>
+            <th (mouseover)="changeText1=true" (mouseout)="changeText1=false">
+                <div class="flexdirection"><span>Direction</span><mat-icon *ngIf="changeText1">menu</mat-icon></div>
+             </th>
+            <th (mouseover)="changeText2=true" (mouseout)="changeText2=false">
+                <div class="flexdirection"><span>Date</span><mat-icon *ngIf="changeText2">menu</mat-icon></div>
+             </th>
+            <th (mouseover)="changeText3=true" (mouseout)="changeText3=false">
+                <div class="flexdirection"><span>Time</span><mat-icon *ngIf="changeText3">menu</mat-icon></div>
+             </th>
+            <th (mouseover)="changeText4=true" (mouseout)="changeText4=false">
+                <div class="flexdirection"><span>Price</span><mat-icon *ngIf="changeText4">menu</mat-icon></div>
+             </th>
+            <th (mouseover)="changeText5=true" (mouseout)="changeText5=false">
+                <div class="flexdirection"><span>You Save</span><mat-icon *ngIf="changeText5">menu</mat-icon></div>
+             </th>
+            <th (mouseover)="changeText6=true" (mouseout)="changeText6=false">
+                <div class="flexdirection"><span>Tickets</span><mat-icon *ngIf="changeText6">menu</mat-icon></div>
+             </th>
+            <th (mouseover)="changeText7=true" (mouseout)="changeText7=false">
+                <div class="flexdirection"><span>Status</span><mat-icon *ngIf="changeText7">menu</mat-icon></div>
+             </th>
            </tr> 
            <tr *ngFor="let det of list">
                 <td>{{det.direction}}</td>
@@ -56,13 +84,27 @@
     <div *ngIf = "infoTab == 1">
         <table>
            <tr>
-                <th><div class="flexdirection"><span>Direction2</span><mat-icon>menu</mat-icon></div></th>
-                <th><div class="flexdirection"><span>Date</span><mat-icon>menu</mat-icon></div></th>
-                <th><div class="flexdirection"><span>Time</span><mat-icon>menu</mat-icon></div></th>
-                <th><div class="flexdirection"><span>Price</span><mat-icon>menu</mat-icon></div></th>
-                <th><div class="flexdirection"><span>You Save</span><mat-icon>menu</mat-icon></div></th>
-                <th><div class="flexdirection"><span>Tickets</span><mat-icon>menu</mat-icon></div></th>
-                <th><div class="flexdirection"><span>Status</span><mat-icon>menu</mat-icon></div></th>
+            <th (mouseover)="changeText1=true" (mouseout)="changeText1=false">
+                <div class="flexdirection"><span>Direction</span><mat-icon *ngIf="changeText1">menu</mat-icon></div>
+             </th>
+            <th (mouseover)="changeText2=true" (mouseout)="changeText2=false">
+                <div class="flexdirection"><span>Date</span><mat-icon *ngIf="changeText2">menu</mat-icon></div>
+             </th>
+            <th (mouseover)="changeText3=true" (mouseout)="changeText3=false">
+                <div class="flexdirection"><span>Time</span><mat-icon *ngIf="changeText3">menu</mat-icon></div>
+             </th>
+            <th (mouseover)="changeText4=true" (mouseout)="changeText4=false">
+                <div class="flexdirection"><span>Price</span><mat-icon *ngIf="changeText4">menu</mat-icon></div>
+             </th>
+            <th (mouseover)="changeText5=true" (mouseout)="changeText5=false">
+                <div class="flexdirection"><span>You Save</span><mat-icon *ngIf="changeText5">menu</mat-icon></div>
+             </th>
+            <th (mouseover)="changeText6=true" (mouseout)="changeText6=false">
+                <div class="flexdirection"><span>Tickets</span><mat-icon *ngIf="changeText6">menu</mat-icon></div>
+             </th>
+            <th (mouseover)="changeText7=true" (mouseout)="changeText7=false">
+                <div class="flexdirection"><span>Status</span><mat-icon *ngIf="changeText7">menu</mat-icon></div>
+             </th>
            </tr> 
            <tr *ngFor="let det of list">
                 <td>{{det.direction}}</td>

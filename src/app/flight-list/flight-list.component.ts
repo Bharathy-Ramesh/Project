@@ -10,7 +10,15 @@ export class FlightListComponent implements OnInit {
   regTab:any=0;
   infoTab:any=0;
   list:any;
-  constructor() { }
+  changeText1:boolean=false;
+  changeText2:boolean=false;
+  changeText3:boolean=false;
+  changeText4:boolean=false;
+  changeText5:boolean=false;
+  changeText6:boolean=false;
+  changeText7:boolean=false;
+  constructor() {
+   }
   
   ngOnInit(): void {
     this.list = [{
