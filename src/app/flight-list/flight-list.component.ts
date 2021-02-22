@@ -21,14 +21,56 @@ export class FlightListComponent implements OnInit {
    }
   
   ngOnInit(): void {
-    this.list = [{
+    this.list = [
+      {
       direction:"Minsk International 2 BY - Berlin Schoenefeld DE",
       date:"13 January 2020",
       price:"$256.00",
       save:"$32.00",
       tickets:55,
       status:"Open"
-    }];
+    },
+    {
+      direction:"Vilnius LT - Kiev Zhulhany UA",
+      date:"25 January 2020",
+      price:"$311.00",
+      save:"$86.00",
+      tickets:61,
+      status:"Open"
+    },
+    {
+      direction:"Tallin EE - Berlin Tegel DE",
+      date:"29 January 2020",
+      price:"$90.00",
+      save:"$12.00",
+      tickets:34,
+      status:"Open"
+    },
+    {
+      direction:"Prague CZ - St. Petersburg Pulkovo",
+      date:"13 January 2020",
+      price:"$140.00",
+      save:"$89.00",
+      tickets:55,
+      status:"Open"
+    },
+    {
+      direction:"Warsaw PL - Minsk International 2 BY",
+      date:"17 January 2020",
+      price:"$220.00",
+      save:"$110.00",
+      tickets:2,
+      status:"Open"
+    },
+    {
+      direction:"Minsk International 2 BY - Berlin Schoenefeld DE",
+      date:"13 January 2020",
+      price:"$256.00",
+      save:"$32.00",
+      tickets:55,
+      status:"Open"
+    }
+  ];
   }
   changetable(val:any){
     debugger;
