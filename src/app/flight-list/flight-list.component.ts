@@ -74,7 +74,8 @@ export class FlightListComponent implements OnInit {
   ];
   }
   sort(attr:any){
-    this.list = _.sortBy(this.list, attr);
+    this.list = _.orderBy(this.list, [attr],  
+    ['asc', 'desc']);
   }
   changetable(val:any){
     debugger;
