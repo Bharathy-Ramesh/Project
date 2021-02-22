@@ -13,25 +13,25 @@
         <table>
            <tr>
                <th (mouseover)="changeText1=true" (mouseout)="changeText1=false">
-                   <div class="flexdirection"><span>Direction</span><mat-icon [style.visibility]="changeText1?'visible':'hidden'">menu</mat-icon></div>
+                   <div class="flexdirection"><span>Direction</span><mat-icon (click)="sort('directon')" [style.visibility]="changeText1?'visible':'hidden'">menu</mat-icon></div>
                 </th>
                <th (mouseover)="changeText2=true" (mouseout)="changeText2=false">
-                   <div class="flexdirection"><span>Date</span><mat-icon [style.visibility]="changeText2?'visible':'hidden'">menu</mat-icon></div>
+                   <div class="flexdirection"><span>Date</span><mat-icon (click)="sort('date')" [style.visibility]="changeText2?'visible':'hidden'">menu</mat-icon></div>
                 </th>
                <th (mouseover)="changeText3=true" (mouseout)="changeText3=false">
                    <div class="flexdirection"><span>Time</span><mat-icon [style.visibility]="changeText3?'visible':'hidden'">menu</mat-icon></div>
                 </th>
                <th (mouseover)="changeText4=true" (mouseout)="changeText4=false">
-                   <div class="flexdirection"><span>Price</span><mat-icon [style.visibility]="changeText4?'visible':'hidden'">menu</mat-icon></div>
+                   <div class="flexdirection"><span>Price</span><mat-icon (click)="sort('price')" [style.visibility]="changeText4?'visible':'hidden'">menu</mat-icon></div>
                 </th>
                <th (mouseover)="changeText5=true" (mouseout)="changeText5=false">
-                   <div class="flexdirection"><span>You Save</span><mat-icon [style.visibility]="changeText5?'visible':'hidden'">menu</mat-icon></div>
+                   <div class="flexdirection"><span>You Save</span><mat-icon (click)="sort('save')" [style.visibility]="changeText5?'visible':'hidden'">menu</mat-icon></div>
                 </th>
                <th (mouseover)="changeText6=true" (mouseout)="changeText6=false">
-                   <div class="flexdirection"><span>Tickets</span><mat-icon [style.visibility]="changeText6?'visible':'hidden'">menu</mat-icon></div>
+                   <div class="flexdirection"><span>Tickets</span><mat-icon (click)="sort('tickets')" [style.visibility]="changeText6?'visible':'hidden'">menu</mat-icon></div>
                 </th>
                <th (mouseover)="changeText7=true" (mouseout)="changeText7=false">
-                   <div class="flexdirection"><span>Status</span><mat-icon [style.visibility]="changeText7?'visible':'hidden'">menu</mat-icon></div>
+                   <div class="flexdirection"><span>Status</span><mat-icon (click)="sort('status')" [style.visibility]="changeText7?'visible':'hidden'">menu</mat-icon></div>
                 </th>
            </tr> 
            <tr *ngFor="let det of list">

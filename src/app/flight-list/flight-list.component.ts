@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-flight-list',
@@ -63,14 +64,17 @@ export class FlightListComponent implements OnInit {
       status:"Open"
     },
     {
-      direction:"Minsk International 2 BY - Berlin Schoenefeld DE",
-      date:"13 January 2020",
-      price:"$256.00",
-      save:"$32.00",
-      tickets:55,
+      direction:"Kiev Zhulhany UA - Moscow Vnukovo RU",
+      date:"27 January 2020",
+      price:"$267.00",
+      save:"$90.00",
+      tickets:7,
       status:"Open"
     }
   ];
+  }
+  sort(attr:any){
+    this.list = _.sortBy(this.list, attr);
   }
   changetable(val:any){
     debugger;
