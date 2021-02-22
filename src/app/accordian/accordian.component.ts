@@ -9,6 +9,13 @@ import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 export class AccordianComponent implements OnInit {
   flight:any;
   hotels:any;
+  registers:any;
+  firstname:any;
+  lastname:any;
+  email:any;
+  login:any;
+  password:any;
+  confirm:any;
   travelType:any;
   departure:any;
   destination:any;

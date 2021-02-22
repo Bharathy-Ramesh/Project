@@ -201,18 +201,78 @@
                 <mat-panel-title>
                     Registers
                 </mat-panel-title>
-                <mat-panel-description>  
-                  </mat-panel-description>
                 </mat-expansion-panel-header>
-                  <!-- <form [formGroup]="userInput">
+                <form #registers ="ngForm">
                     <div>
-                        <label>Trip</label> 
-                        <mat-radio-group [formControl]="floatLabelControl">
-                            <mat-radio-button value="oneway">One Way</mat-radio-button>
-                            <mat-radio-button value="return">Return</mat-radio-button>
-                        </mat-radio-group>                           
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>First Name</label>
+                                </td>
+                                <td>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput name="firstname" [(ngModel)]="firstname">
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Last Name</label>
+                                </td>
+                                <td>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput name="lastname" [(ngModel)]="lastname">
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Email</label>
+                                </td>
+                                <td>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput type="email" name="email" [(ngModel)]="email">
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Login</label>
+                                </td>
+                                <td>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput name="login" [(ngModel)]="login">
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Password</label>
+                                </td>
+                                <td>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput name="password" [(ngModel)]="password">
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Confirm Password</label>
+                                </td>
+                                <td>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput type="password" name="confirm" [(ngModel)]="confirm">
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan = "2">
+                                <button mat-button class="button">Search</button>
+                                </td>
+                            </tr>
+                        </table>                          
                     </div>
-                </form>             -->
+                </form> 
         </mat-expansion-panel>
     </mat-accordion>
 </div>
