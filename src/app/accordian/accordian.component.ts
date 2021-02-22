@@ -1,5 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup, FormGroupDirective, NgForm, Validator} from '@angular/forms';
+import {ErrorStateMatcher} from '@angular/material/core';
+
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+  }
+}
 
 @Component({
   selector: 'app-accordian',
@@ -28,10 +36,10 @@ export class AccordianComponent implements OnInit {
   pickup:any;
   return:any;
   minDate:any =new Date();
-  
+  matcher = new MyErrorStateMatcher();
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  
 }
