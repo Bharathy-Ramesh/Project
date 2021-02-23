@@ -35,11 +35,21 @@ export class AccordianComponent implements OnInit {
   checkout:any;
   pickup:any;
   return:any;
+  setbool:boolean=true;
   minDate:any =new Date();
   matcher = new MyErrorStateMatcher();
   constructor() { }
 
   ngOnInit(): void {
+    
   }
-  
+  validate(mail:any){
+    debugger;
+      if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail))
+        { 
+          return (true);
+        }
+        this.setbool= false;
+        return (false);
+  }
 }
