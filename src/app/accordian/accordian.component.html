@@ -232,7 +232,8 @@
                                 <td>
                                     <mat-form-field appearance="fill">
                                         <input matInput type="email" name="email" (blur)="validate(email)" [(ngModel)]="email">
-                                        <mat-error *ngIf="!setbool">
+                                        {{email.untouched}}
+                                        <mat-error *ngIf="setbool == false">
                                             Please enter a valid email address
                                         </mat-error>
                                         <mat-error *ngIf="">

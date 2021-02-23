@@ -49,7 +49,9 @@ export class AccordianComponent implements OnInit {
         { 
           return (true);
         }
+        else{
         this.setbool= false;
-        return (false);
+        return this.setbool;
+        }
   }
 }
