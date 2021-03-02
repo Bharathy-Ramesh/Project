@@ -2,6 +2,7 @@
     <div class="flexdirection">
         <div class="label">
             <button class="mat-raised-button" (click)="fileInput.click()">choose</button>
+            <button class="mat-raised-button" (click)="exportexcel()">download</button>
             <input style="display: none;" type="file" #fileInput (change)="fileChangeEvent($event)">
             <h4>Flights</h4>
         </div>
@@ -12,7 +13,7 @@
         </div>
     </div>
     <div *ngIf = "offerTab == 1">
-        <table>
+        <table id="excel-table">
            <tr>
                <th (mouseover)="changeText1=true" (mouseout)="changeText1=false">
                    <div class="flexdirection"><span>Direction</span><mat-icon (click)="sort('direction')" [style.visibility]="changeText1?'visible':'hidden'">menu</mat-icon></div>

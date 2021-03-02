@@ -111,6 +111,7 @@ export class FlightListComponent implements OnInit {
 
   exportexcel(): void 
     {
+      debugger;
        /* table id is passed over here */   
        let element = document.getElementById('excel-table'); 
        const ws: XLSX.WorkSheet =XLSX.utils.table_to_sheet(element);
@@ -120,7 +121,7 @@ export class FlightListComponent implements OnInit {
        XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
 
        /* save to file */
-       XLSX.writeFile(wb, this.fileName);
+       XLSX.writeFile(wb, "test.xlsx");
 			
     }
 
