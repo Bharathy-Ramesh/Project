@@ -1,6 +1,8 @@
 <mat-card>
     <div class="flexdirection">
         <div class="label">
+            <button class="mat-raised-button" (click)="fileInput.click()">choose</button>
+            <input style="display: none;" type="file" #fileInput (change)="fileChangeEvent($event)">
             <h4>Flights</h4>
         </div>
         <div>
