@@ -4,6 +4,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatIconModule } from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccordianComponent } from './accordian/accordian.component';
 import {MatExpansionModule} from '@angular/material/expansion';
@@ -42,7 +43,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatNativeDateModule,
     MatInputModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
