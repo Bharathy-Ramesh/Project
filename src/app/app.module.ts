@@ -18,6 +18,7 @@ import {MatInputModule} from '@angular/material/input';
 import { FlightListComponent } from './flight-list/flight-list.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
+import { FormsComponent } from './forms/forms.component';
 
 
 
@@ -25,7 +26,8 @@ import {MatTabsModule} from '@angular/material/tabs';
   declarations: [
     AppComponent,
     AccordianComponent,
-    FlightListComponent
+    FlightListComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
