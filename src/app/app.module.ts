@@ -19,7 +19,7 @@ import { FlightListComponent } from './flight-list/flight-list.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import { FormsComponent } from './forms/forms.component';
-
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -46,7 +46,8 @@ import { FormsComponent } from './forms/forms.component';
     MatInputModule,
     MatCardModule,
     MatTabsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

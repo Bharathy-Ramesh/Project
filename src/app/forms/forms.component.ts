@@ -8,8 +8,12 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class FormsComponent implements OnInit {
   profile = new FormGroup({
-    name : new FormControl('')
-  })
+    name : new FormControl(),
+    email:new FormControl(),
+    password:new FormControl(),
+    religion:new FormControl(),
+    date:new FormControl()
+  });
   constructor() { }
 
   ngOnInit(): void {
