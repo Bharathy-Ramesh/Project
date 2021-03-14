@@ -11,6 +11,7 @@ export class FlightListComponent implements OnInit {
   offerTab:any=1;
   regTab:any=0;
   infoTab:any=0;
+  formtab:any = 0;
   list:any;
   changeText1:boolean=false;
   changeText2:boolean=false;
@@ -84,16 +85,25 @@ export class FlightListComponent implements OnInit {
      this.offerTab = 1;
      this.regTab = 0;
      this.infoTab = 0;
+     this.formtab = 0;
     }
     if(val==2){
       this.offerTab = 0;
       this.regTab = 1;
       this.infoTab = 0;
+      this.formtab = 0;
      }
      if(val==3){
       this.offerTab = 0;
       this.regTab = 0;
       this.infoTab = 1;
+      this.formtab = 0;
+     }
+     if(val == 4){
+      this.offerTab = 0;
+      this.regTab = 0;
+      this.infoTab = 0;
+      this.formtab = 1;
      }
   }
 
