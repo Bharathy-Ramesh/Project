@@ -10,7 +10,7 @@
             <button [style.background-color]="offerTab==1?'rgb(207, 201, 201)':'white'" (click)="changetable(1)">OFFERS</button>
             <button [style.background-color]="regTab==1?'rgb(207, 201, 201)':'white'" (click)="changetable(2)">REGULAR</button>
             <button [style.background-color]="infoTab==1?'rgb(207, 201, 201)':'white'" (click)="changetable(3)">INFO</button>
-            <button [style.background-color]="infoTab==1?'rgb(207, 201, 201)':'white'" (click)="changetable(4)">FORMS</button>
+            <button [style.background-color]="infoTab==1?'rgb(207, 201, 201)':'white'" routerLink = "/forms" (click)="changetable(4)">FORMS</button>
         </div>
     </div>
     <div *ngIf = "offerTab == 1">
