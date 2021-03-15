@@ -7,17 +7,17 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./forms.component.scss']
 })
 export class FormsComponent implements OnInit {
-  profile = new FormGroup({
-    name : new FormControl(),
-    email:new FormControl(),
-    password:new FormControl(),
-    religion:new FormControl(),
-    date:new FormControl()
-  });
+  profile :any;
   constructor() { }
 
   ngOnInit(): void {
-    
+    this.profile = new FormGroup({
+      name : new FormControl(),
+      email:new FormControl(),
+      password:new FormControl(),
+      religion:new FormControl(),
+      date:new FormControl()
+    });
   }
   
 }
