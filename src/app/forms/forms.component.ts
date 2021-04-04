@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-forms',
@@ -8,15 +8,15 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class FormsComponent implements OnInit {
   profile :any;
-  constructor() { }
+  constructor(private formbuilder:FormBuilder) { }
 
   ngOnInit(): void {
-    this.profile = new FormGroup({
-      name : new FormControl(),
-      email:new FormControl(),
-      password:new FormControl(),
-      religion:new FormControl(),
-      date:new FormControl()
+    this.profile = this.formbuilder.group({
+      name : '',
+      email:'',
+      password:'',
+      religion:'',
+      date:''
     });
   }
   
